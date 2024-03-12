@@ -116,7 +116,17 @@ def chunk(array, num):
 
 def load_json(path):
     with open(path) as fil:
-        return json.load(fil)
+        last_good_state = {}
+        while True:
+            line = fil.readline()
+            try:
+                last_good_state = json.loads(line)
+            except json.decoder.JSONDecodeError:
+                pass
+            if not line:
+                break
+
+        return last_good_state
 
 
 def update_state(state, entity, dtime):
