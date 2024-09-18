@@ -206,32 +206,32 @@ def parse_args(required_config_keys):
 
     parser.add_argument(
         '--param1',
-        help='Attribute from a Peliqan server instance'
+        help='Attribute from a Peliqan connection instance'
     )
 
     parser.add_argument(
         '--param2',
-        help='Attribute from a Peliqan server instance'
+        help='Attribute from a Peliqan connection instance'
     )
 
     parser.add_argument(
         '--param3',
-        help='Attribute from a Peliqan server instance'
+        help='Attribute from a Peliqan connection instance'
     )
 
     parser.add_argument(
         '--param4',
-        help='Attribute from a Peliqan server instance'
+        help='Attribute from a Peliqan connection instance'
     )
 
     parser.add_argument(
         '--param5',
-        help='Attribute from a Peliqan server instance'
+        help='Attribute from a Peliqan connection instance'
     )
 
     parser.add_argument(
         '--param6',
-        help='Attribute from a Peliqan server instance'
+        help='Attribute from a Peliqan connection instance'
     )
 
     parser.add_argument(
