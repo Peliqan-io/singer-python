@@ -25,7 +25,7 @@ def string_to_datetime(value):
     try:
         return strftime(strptime_to_utc(value))
     except Exception as ex:
-        LOGGER.warning("%s, (%s)", ex, value)
+        # LOGGER.warning("%s, (%s)", ex, value)
         return None
 
 
