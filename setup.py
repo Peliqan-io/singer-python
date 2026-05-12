@@ -4,27 +4,35 @@ from setuptools import setup, find_packages
 import subprocess
 
 setup(name="singer-python",
-      version='5.12.5',
+      version='5.12.6',
       description="Singer.io utility library",
       author="Stitch",
-      classifiers=['Programming Language :: Python :: 3 :: Only'],
+      python_requires=">=3.7.0",
+      classifiers=[
+          'Programming Language :: Python :: 3 :: Only',
+          'Programming Language :: Python :: 3.7',
+          'Programming Language :: Python :: 3.8',
+          'Programming Language :: Python :: 3.9',
+          'Programming Language :: Python :: 3.10',
+          'Programming Language :: Python :: 3.11',
+      ],
       url="http://singer.io",
       install_requires=[
           'pytz>=2018.4',
           'jsonschema>=2.6.0',
           'simplejson>=3.11.1',
           'python-dateutil>=2.6.0',
-          'backoff>=1.8.0',
+          'backoff>=2.2.1',
           'pycryptodome',
           'pycryptodomex',
-	  'ciso8601',
+          'ciso8601',
       ],
       extras_require={
           'dev': [
               'pylint',
               'ipython',
               'ipdb',
-              'nose',
+              'pytest',
               'singer-tools'
           ]
       },
